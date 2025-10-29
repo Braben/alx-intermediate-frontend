@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @media (max-width: 768px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+      <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+      <section class="lg:col-span-2 flex">
+        <div class="bg-red-200 p-4 w-1/2">Flexbox Item 1</div>
+        <div class="bg-red-400 p-4 w-1/2">Flexbox Item 2</div>
+      </section>
+      <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+      <img
+        src="https://media.gettyimages.com/id/1218961153/photo/art-museum.jpg?s=612x612&w=0&k=20&c=9fK54fu1mjzFjDOSqg_jfrMy4Hkp8vsmImB7rLrbhJs="
+        alt="art-museum"
+        class="object-cover h-full w-full"
+      />
+      <img
+        src="https://media.gettyimages.com/id/1398345865/photo/people-in-art-gallery.jpg?s=612x612&w=0&k=20&c=AzN762ONcC_Zh2nKkNHNZXLUVBhJEAzGGghPIiR52mQ="
+        alt="people-in-art-gallery"
+        class="object-cover h-full w-full"
+      />
+      <img
+        src="https://media.gettyimages.com/id/1479455451/photo/young-woman-appreciating-works-of-art.jpg?s=612x612&w=0&k=20&c=CG8ykxlBVnaB67EupWGQPc0Rm7TvXsXcL1T83ZH_H4g="
+        alt="young-woman-appreciating-works-of-art"
+        class="object-cover h-full w-full"
+      />
+      <img
+        src="https://media.gettyimages.com/id/200154762-004/photo/bench-and-art-pieces-in-gallery.jpg?s=612x612&w=0&k=20&c=4EP5i3jClFPhF8z6kDpwNLmgwEvIvHP16EUohDkFPyk="
+        alt="bench-and-art-pieces-in-gallery"
+        class="object-cover h-full w-full"
+      />
+      <img
+        src="https://media.gettyimages.com/id/457212159/photo/couple-looking-at-red-blank-art-in-gallery.jpg?s=612x612&w=0&k=20&c=oQN4uyPFWIV3YDxw4Oj280tJ2Ib3YsvnAYBeWXA7Ia8="
+        alt="couple-looking-at-red-blank-art-in-gallery"
+        class="object-cover h-full w-full"
+      />
+      <img
+        src="https://media.gettyimages.com/id/185227273/photo/gallery-interior-with-empty.jpg?s=612x612&w=0&k=20&c=u6tprd36ysNsoKkNzcRBQ1_kWX07QAHJLAD7FW3ibEo="
+        alt="gallery-interior-with-empty"
+        class="object-cover h-full w-full"
+      />
+    </section>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+      <p>&copy; 2025 Ben's Blog</p>
+    </footer>
+  </body>
+</html>
